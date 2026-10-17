@@ -1,0 +1,47 @@
+Основные команды Git
+
+Инициализация репозитория:
+
+git init -b main — создать новый репозиторий
+git clone <url> — клонировать существующий репозиторий
+Настройка пользователя:
+
+git config --global user.name "Имя"
+git config --global user.email "email"
+Работа с файлами:
+
+git status — проверить статус репозитория
+git add <файл> — добавить файл в индекс
+git commit -m "Сообщение" — создать коммит
+Работа с ветками:
+
+git switch <имя_ветки> — переключиться на ветку
+git switch -c <новая_ветка> — создать и переключиться
+git branch — показать список веток
+Удаленный репозиторий:
+
+git remote add origin <url> — подключить удаленный репозиторий
+git push origin <ветка> — отправить изменения
+git pull — получить изменения
+Просмотр истории:
+
+git log — история коммитов
+git log --oneline — компактная история
+git show <хеш> — детали коммита
+Примеры из лабораторной работы:
+
+Создание проекта:
+
+bash
+mkdir git-practice
+cd git-practice
+git init -b main
+Работа с ветками:
+
+bash
+git switch -c feature
+git push --set-upstream origin feature
+Решение проблем:
+
+При ошибке с веткой использовать git push --set-upstream origin <ветка>
+При конфликтах использовать git status для поиска проблемных файлов
